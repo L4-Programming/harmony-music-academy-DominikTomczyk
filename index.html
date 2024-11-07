@@ -2,10 +2,17 @@
 <html>
   <head>
     <title>Harmony | Sign Up</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <form class="form-wrapper">
+    <form class="form-wrapper" id="input-form">
       <div class="form-section">
+        <img
+          class="form-top-image"
+          src="./assets/harmony-music-academy-logo.svg"
+          alt="Harmony Music Academy logo"
+        />
+
         <div class="form-field">
           <label for="email" class="form-label">Email*</label>
           <input
@@ -13,15 +20,18 @@
             type="text"
             class="form-input"
             placeholder="Your email"
+            id="emailInput"
           />
         </div>
+
         <div class="form-field">
           <label for="level" class="form-label">Level*</label>
-          <select name="level" class="form-input">
+          <select name="level" class="formInput" id="level-input">
             <option value="basic">Basic</option>
             <option value="advanced">Advanced</option>
           </select>
         </div>
+
         <div class="form-field">
           <label for="hoursPerWeek" class="form-label">Hours per week*</label>
           <input
@@ -29,18 +39,22 @@
             type="number"
             class="form-input"
             placeholder="How many?"
+            id="hoursInput"
           />
         </div>
+
+        <p id="error_text">You must sign up for at least one hour per week.</p>
 
         <button type="submit" class="submit-btn">Sign up</button>
       </div>
 
-      <div class="form-section">
+      <div class="form-image-section">
         <img
           src="./assets/harmony-music-academy-logo.svg"
           alt="Harmony Music Academy logo"
         />
       </div>
     </form>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

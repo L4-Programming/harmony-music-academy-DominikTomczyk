@@ -24,6 +24,7 @@ button {
   background-color: var(--grey-50);
   min-height: 100vh;
 }
+
 .form-section {
   width: calc(50% - 1px);
   display: flex;
@@ -34,6 +35,29 @@ button {
   gap: 2rem;
   padding: 2rem 4rem;
 }
+.form-image-section {
+  width: calc(50% - 1px);
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+.form-top-image {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .form-image-section {
+    display: none;
+  }
+
+  .form-top-image {
+    display: flex;
+  }
+}
+
 .form-section:first-of-type {
   border-right: 1px solid var(--grey-300);
 }
