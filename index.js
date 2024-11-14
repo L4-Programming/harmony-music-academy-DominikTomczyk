@@ -27,9 +27,6 @@ formData.addEventListener("submit", function (event) {
 });
 
 
-
-
-
 function validateData(email, level, hours) {
   let emailError = document.getElementById("email_error");
   let levelError = document.getElementById("level_error");

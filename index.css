@@ -111,3 +111,7 @@ button {
   box-shadow: var(--box-shadow-lg);
   transition: all 0.3s ease;
 }
+
+.error_text {
+  color: red;
+}
