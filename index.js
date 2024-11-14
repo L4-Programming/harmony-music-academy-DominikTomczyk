@@ -54,17 +54,12 @@ function validateData(email, level, hours) {
   if (hours < 1) {
     hoursError.textContent = "You must sign up for at least one hour per week";
     console.log("hour too low");
-  }
-
-  //  Check if the number of hours requested is within the allowed range - "You can only have a maximum of 5 hours per week with the beginner plan" / "You can only have a maximum of 10 hours per week with the advanced plan"
-  if (level == "basic" && hours > 5) {
+    
+    //  Check if the number of hours requested is within the allowed range - "You can only have a maximum of 5 hours per week with the beginner plan" / "You can only have a maximum of 10 hours per week with the advanced plan"
+  } else if (level == "basic" && hours > 5) {
     hoursError.textContent = "You can only have a maximum of 5 hours per week with the basic plan";
     console.log("beginner hours too high");
-  } else {
-    hoursError.textContent = "";
-  }
-
-  if (level == "advanced" && hours > 10) {
+  } else if (level == "advanced" && hours > 10) {
     hoursError.textContent = "You can only have a maximum of 10 hours per week with the advanced plan";
     console.log("advanced hours too high");
   } else {
