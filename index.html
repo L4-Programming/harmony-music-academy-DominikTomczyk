@@ -20,16 +20,18 @@
             type="text"
             class="form-input"
             placeholder="Your email"
-            id="emailInput"
+            id="email"
           />
+          <p id="email_error"></p>
         </div>
 
         <div class="form-field">
           <label for="level" class="form-label">Level*</label>
-          <select name="level" class="formInput" id="level-input">
+          <select name="level" class="form-input" id="level">
             <option value="basic">Basic</option>
             <option value="advanced">Advanced</option>
           </select>
+          <p id="level_error"></p>
         </div>
 
         <div class="form-field">
@@ -39,11 +41,12 @@
             type="number"
             class="form-input"
             placeholder="How many?"
-            id="hoursInput"
+            id="hoursPerWeek"
           />
+          <p id="hours_error"></p>
         </div>
 
-        <p id="error_text">You must sign up for at least one hour per week.</p>
+        
 
         <button type="submit" class="submit-btn">Sign up</button>
       </div>
