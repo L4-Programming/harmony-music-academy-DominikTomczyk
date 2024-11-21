@@ -1,5 +1,7 @@
 // javascript
 import { validateForm } from "./validateForm.js";
+import { calculateCosts } from "./calculateCosts.js";
+import { displayResults } from "./displayResults.js";
 
 // Capture user's input on form submission - Set to variables
 
@@ -22,7 +24,10 @@ formData.addEventListener("submit", function (event) {
   // Validate the user's input - check with ifs. display errors by showing hidden text
   const result = validateForm({userEmail, userLevel, userHours});
 
-  console.log({ result });
+  if (result) {
+    const output = calculateCosts(result)
+    displayResults(output);
+  }
 
 });
 
