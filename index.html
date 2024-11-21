@@ -2,26 +2,38 @@
 <html>
   <head>
     <title>Harmony | Sign Up</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <form class="form-wrapper">
+    <form class="form-wrapper" id="input-form">
       <div class="form-section">
+        <img
+          class="form-top-image"
+          src="./assets/harmony-music-academy-logo.svg"
+          alt="Harmony Music Academy logo"
+        />
+
         <div class="form-field">
           <label for="email" class="form-label">Email*</label>
           <input
             name="email"
-            type="text"
+            type="email"
             class="form-input"
             placeholder="Your email"
+            id="email"
           />
+          <p id="email_error" class="error_text"></p>
         </div>
+
         <div class="form-field">
           <label for="level" class="form-label">Level*</label>
-          <select name="level" class="form-input">
+          <select name="level" class="form-input" id="level">
             <option value="basic">Basic</option>
             <option value="advanced">Advanced</option>
           </select>
+          <p id="level_error" class="error_text"></p>
         </div>
+
         <div class="form-field">
           <label for="hoursPerWeek" class="form-label">Hours per week*</label>
           <input
@@ -29,18 +41,23 @@
             type="number"
             class="form-input"
             placeholder="How many?"
+            id="hoursPerWeek"
           />
+          <p id="hours_error" class="error_text"></p>
         </div>
+
+        
 
         <button type="submit" class="submit-btn">Sign up</button>
       </div>
 
-      <div class="form-section">
+      <div class="form-image-section">
         <img
           src="./assets/harmony-music-academy-logo.svg"
           alt="Harmony Music Academy logo"
         />
       </div>
     </form>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
