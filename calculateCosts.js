@@ -1,7 +1,4 @@
 export function calculateCosts(data) {
-    console.log("Calculating costs...")
-    
-
     const hoursCostsPerLevel = {
         basic: 12.25,
         advanced: 15.50

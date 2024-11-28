@@ -10,7 +10,6 @@ let formData = document.querySelector("form");
 
 formData.addEventListener("submit", function (event) {
   event.preventDefault();
-  console.log("Form submitted");
 
   //  Get the user's email address - userEmail
   let userEmail = document.querySelector("#email").value;
